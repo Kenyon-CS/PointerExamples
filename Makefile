@@ -7,18 +7,18 @@ CC = g++
 CFLAGS = -Wall -g
 
 # Target executable
-TARGET = pointer_example
+TARGET = example1
 
 # Default rule to compile the target
 all: $(TARGET)
 
 # Rule to link object files and generate the executable
-$(TARGET): pointer_example.o
-	$(CC) $(CFLAGS) -o $(TARGET) pointer_example.o
+$(TARGET): example1.o
+	$(CC) $(CFLAGS) -o $(TARGET) example1.o
 
 # Rule to compile the .cpp file into .o object file
-pointer_example.o: pointer_example.cpp
-	$(CC) $(CFLAGS) -c pointer_example.cpp
+example1.o: example1.cpp
+	$(CC) $(CFLAGS) -c example1.cpp
 
 # Clean up object files and the executable
 clean:
